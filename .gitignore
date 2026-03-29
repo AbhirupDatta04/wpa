@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Colab / Jupyter artifacts
+.ipynb_checkpoints/
+*.csv
+*.parquet
+
+# Credentials — NEVER commit these
+credentials.json
+service_account*.json
+token*.json
+
+# OS
+.DS_Store
