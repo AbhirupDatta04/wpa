@@ -3,16 +3,30 @@ __pycache__/
 *.pyc
 *.pyo
 .env
+*.egg-info/
+dist/
+build/
 
-# Colab / Jupyter artifacts
-.ipynb_checkpoints/
+# Data files — never commit raw data
 *.csv
 *.parquet
+*.json
+/tmp/
 
-# Credentials — NEVER commit these
+# Credentials — NEVER commit
 credentials.json
 service_account*.json
-token*.json
+*keyfile*.json
+.env
 
-# OS
-.DS_Store
+# IDE
+.vscode/
+.idea/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+""")
+print("✅ .gitignore")
+
+
+__init__.py
