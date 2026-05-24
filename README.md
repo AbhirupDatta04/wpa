@@ -23,6 +23,28 @@ The platform currently includes:
 
 ## Architecture
 
+## Architecture
+
+```mermaid
+flowchart TD
+
+    A[Data Generation Layer] --> B[GCS Raw Layer]
+
+    B --> C[Bronze ETL Processing]
+
+    C --> D[Local PySpark Transformations]
+
+    D --> E[Parquet Persistence]
+
+    E --> F[GCS Bronze Layer]
+
+    F --> G[Future Silver Analytics Layer]
+
+    G --> H[Future Gold Metrics Layer]
+
+    H --> I[Dashboard & Analytics Consumption]
+```
+
 ```text
 Data Generation
        ↓
